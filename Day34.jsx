@@ -1,0 +1,184 @@
+
+
+ 
+
+function Card() {
+
+ return (
+
+   <div className="max-w-sm p-6 m-4 border border-gray-300 rounded-lg">
+
+     <h2 className="text-2xl font-bold mb-2">
+
+       React Developer
+
+     </h2>
+
+ 
+
+     <p className="text-gray-600 text-base mb-4">
+
+       Learn React and Tailwind CSS to build beautiful websites.
+
+     </p>
+
+ 
+
+     <button className="px-4 py-2 border rounded bg-blue-500 text-white">
+
+       Learn More
+
+     </button>
+
+   </div>
+
+ );
+
+}
+
+ 
+
+function App() {
+
+ return (
+
+   <div>
+
+     <Card />
+
+   </div>
+
+ );
+
+}
+
+ 
+
+export default App;
+
+ 
+
+
+
+ 
+
+function App() {
+
+ return (
+
+   <nav className="flex flex-col gap-4 bg-blue-600 p-4 text-white md:flex-row md:items-center md:justify-between">
+
+     <h1 className="text-2xl font-bold">My Website</h1>
+
+ 
+
+     <div className="flex flex-col gap-2 md:flex-row md:gap-6">
+
+       <a href="#" className="hover:text-yellow-300">Home</a>
+
+       <a href="#" className="hover:text-yellow-300">About</a>
+
+       <a href="#" className="hover:text-yellow-300">Services</a>
+
+       <a href="#" className="hover:text-yellow-300">Contact</a>
+
+     </div>
+
+   </nav>
+
+ );
+
+}
+
+ 
+
+export default App;
+
+ 
+
+ 
+
+function App() {
+
+ return (
+
+   <div className="flex gap-3 p-6">
+
+     <button className="rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-700 focus:outline-2 focus:outline-yellow-400 active:scale-95">
+
+       Home
+
+     </button>
+
+ 
+
+     <button className="rounded bg-green-500 px-4 py-2 text-white hover:bg-green-700 focus:outline-2 focus:outline-yellow-400 active:scale-95">
+
+       About
+
+     </button>
+
+ 
+
+     <button className="rounded bg-red-500 px-4 py-2 text-white hover:bg-red-700 focus:outline-2 focus:outline-yellow-400 active:scale-95">
+
+       Contact
+
+     </button>
+
+   </div>
+
+ );
+
+}
+
+ 
+
+export default App;
+
+ 
+
+
+ 
+
+function Button({ text, color }) {
+
+ return (
+
+   <button
+
+     className={`px-4 py-2 rounded text-white ${color}`}
+
+   >
+
+     {text}
+
+   </button>
+
+ );
+
+}
+
+ 
+
+function App() {
+
+ return (
+
+   <div className="flex gap-3 p-6">
+
+     <Button text="Home" color="bg-blue-500 hover:bg-blue-700" />
+
+     <Button text="Save" color="bg-green-500 hover:bg-green-700" />
+
+     <Button text="Delete" color="bg-red-500 hover:bg-red-700" />
+
+   </div>
+
+ );
+
+}
+
+ 
+
+export default App;
